@@ -3,6 +3,11 @@
 
 int main() {
 
+    FILE* numbers = fopen("myfile.txt", "r");
+    binary_tree bt;
+    int found;
+
+
     printf("Print in order\n");
     printinorder(&bt);
     printf("\nPrint pre order\n");
