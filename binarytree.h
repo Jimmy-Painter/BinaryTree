@@ -7,10 +7,14 @@
 
 typedef struct Binary_Tree{
 
-    int item;
-
+    int size;
+	struct Binary_Tree root;
 
 }binary_tree;
+
+typedef struct Tree_Node {
+
+};
 
 
 
