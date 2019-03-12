@@ -7,3 +7,7 @@ void initialize(binary_tree* bt) {
     bt->size = 0;
 }
 
+int btSize(binary_tree* bt) {
+    return bt->size;
+}
+
