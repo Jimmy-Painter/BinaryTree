@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 void initialize(binary_tree* bt) {
-    bt->root = NULL
+    bt->root = NULL;
     bt->size = 0;
 }
 
