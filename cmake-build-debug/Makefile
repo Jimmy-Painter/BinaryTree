@@ -123,6 +123,33 @@ BinaryTree/fast:
 	$(MAKE) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/build
 .PHONY : BinaryTree/fast
 
+binarytree.o: binarytree.c.o
+
+.PHONY : binarytree.o
+
+# target to build an object file
+binarytree.c.o:
+	$(MAKE) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/binarytree.c.o
+.PHONY : binarytree.c.o
+
+binarytree.i: binarytree.c.i
+
+.PHONY : binarytree.i
+
+# target to preprocess a source file
+binarytree.c.i:
+	$(MAKE) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/binarytree.c.i
+.PHONY : binarytree.c.i
+
+binarytree.s: binarytree.c.s
+
+.PHONY : binarytree.s
+
+# target to generate assembly for a file
+binarytree.c.s:
+	$(MAKE) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/binarytree.c.s
+.PHONY : binarytree.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... BinaryTree"
 	@echo "... edit_cache"
+	@echo "... binarytree.o"
+	@echo "... binarytree.i"
+	@echo "... binarytree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

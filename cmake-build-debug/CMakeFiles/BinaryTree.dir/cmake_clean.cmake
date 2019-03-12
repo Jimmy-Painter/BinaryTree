@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BinaryTree.dir/main.c.o"
+  "CMakeFiles/BinaryTree.dir/binarytree.c.o"
   "BinaryTree.pdb"
   "BinaryTree.exe"
   "libBinaryTree.dll.a"
