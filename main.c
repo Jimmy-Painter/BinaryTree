@@ -6,6 +6,10 @@ int main() {
     FILE* numbers = fopen("myfile.txt", "r");
     binary_tree bt;
     int found;
+    int const ARR_SIZE = 10;
+    int nums[ARR_SIZE ];
+
+
 
 
     printf("Print in order\n");
