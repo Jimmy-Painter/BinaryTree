@@ -8,7 +8,7 @@
 typedef struct Binary_Tree{
 
     int item;
-    
+
 
 }binary_tree;
 
