@@ -1,4 +1,6 @@
-//
-// Created by Jimmy on 3/12/2019.
-//
+#include "binarytree.h"
 
+void initialize(binary_tree* bt){
+  bt->size = 0;
+  bt->root = NULL;
+}
