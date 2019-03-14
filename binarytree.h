@@ -15,7 +15,9 @@ typedef struct Binary_Tree{
 typedef struct Tree_Node {
     int item;
     struct Tree_Node nextNodePtr;
-    struct Tree_NOde nextNodeLeft
+    struct Tree_Node nextNodeLeft;
+    struct Tree_Node nextNodeRight;
+
 }Node;
 
 

@@ -73,7 +73,7 @@ void insert(binary_tree* bt, int key) {
        if (key < previous->key) {
 		    previous->nextNodeLeft = new;
        }
-	    else{
+       else{
 		    previous->nextNodeRight = new;
         }
     }
@@ -86,3 +86,13 @@ int btSize(binary_tree* bt) {
     return bt->size;
 }
 
+void printnodesinorder(node* pnode){
+    if(pnode ==NULL){
+        return;
+    }
+    printnodesinorder(pnode.left);
+}
+
+void printinorder(binary_tree* bt){
+    printnodesinorder(bt->root);
+}
