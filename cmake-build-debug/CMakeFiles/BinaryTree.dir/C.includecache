@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.c
+binarytree.h
+/cygdrive/c/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.h
+stdio.h
+-
+stdlib.h
+-
+
+/cygdrive/c/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.h
+stdbool.h
+-
+stdio.h
+-
+
+/cygdrive/c/Users/parke/OneDrive/Documents/GitHub/BinaryTree/main.c
+stdio.h
+-
+binarytree.h
+/cygdrive/c/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.h
+
