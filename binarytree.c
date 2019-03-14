@@ -86,11 +86,11 @@ int btSize(binary_tree* bt) {
     return bt->size;
 }
 
-void printnodesinorder(node* pnode){
+void printnodesinorder(Node* pnode){
     if(pnode ==NULL){
         return;
     }
-    printnodesinorder(pnode.left);
+    printnodesinorder(pnode->nextNodeLeft);
 }
 
 void printinorder(binary_tree* bt){

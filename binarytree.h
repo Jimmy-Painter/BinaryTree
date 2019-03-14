@@ -24,7 +24,7 @@ typedef struct Tree_Node {
 
 void initialize(binary_tree* bt);
 bool search(binary_tree* bt, int key);
-void insert(binary_tree* bt, int item);
+void insert(binary_tree* bt, int key);
 void printinorder(binary_tree* bt);
 void printpreorder(binary_tree* bt);
 void printpostorder(binary_tree* bt);
