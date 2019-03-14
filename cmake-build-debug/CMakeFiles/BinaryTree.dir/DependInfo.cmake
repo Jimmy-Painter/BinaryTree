@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/binarytree.c" "/cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir/binarytree.c.o"
-  "/cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/main.c" "/cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir/main.c.o"
+  "/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/binarytree.c" "/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir/binarytree.c.o"
+  "/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/main.c" "/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
