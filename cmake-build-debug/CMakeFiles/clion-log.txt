@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\theni\.CLion2018.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree
 -- The C compiler identification is GNU 7.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -9,6 +10,12 @@ C:\Users\parke\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\c
 -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.12.25827/bin/Hostx86/x86/cl.exe
 -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.12.25827/bin/Hostx86/x86/cl.exe -- works
 >>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
+C:\Users\Jimmy\.CLion2018.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree
+-- The C compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
@@ -16,7 +23,11 @@ C:\Users\parke\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\c
 -- Configuring done
 -- Generating done
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Build files have been written to: /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug
 =======
 -- Build files have been written to: C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug
 >>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
+-- Build files have been written to: /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae

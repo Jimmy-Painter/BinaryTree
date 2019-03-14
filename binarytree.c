@@ -60,7 +60,7 @@ void insert(binary_tree* bt, int key) {
            }
        }
        //deals with the case of the root being the only node in the tree
-       if (current = bt->root) {
+       if (current == bt->root) {
            if(key < bt->root->key) {
                current = bt->root->nextNodeLeft;
            }
@@ -73,19 +73,14 @@ void insert(binary_tree* bt, int key) {
        if (key < previous->key) {
 		    previous->nextNodeLeft = new;
        }
-	    else{
+       else{
 		    previous->nextNodeRight = new;
         }
     }
     bt->size++;
 }
 
-
-
-int btSize(binary_tree* bt) {
-    return bt->size;
-}
-
+<<<<<<< HEAD
 void printpostorder(binarytree* bt) {
   if(bt->root = NULL){
     return;
@@ -117,7 +112,28 @@ int treeheight(binarytree* bt){
     }
 
     else {
-      return rioghtDepth + 1;
+      return rightDepth + 1;
     }
 
 }
+
+int btsize(binarytree* bt){
+    return bt->size;
+  }
+
+
+
+
+}
+=======
+void printnodesinorder(node* pnode){
+    if(pnode ==NULL){
+        return;
+    }
+    printnodesinorder(pnode.left);
+}
+
+void printinorder(binary_tree* bt){
+    printnodesinorder(bt->root);
+}
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
