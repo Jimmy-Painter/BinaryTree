@@ -111,7 +111,6 @@ void printnodesinorder(node* pnode){
     if(pnode ==NULL){
         return;
     }
-    printnodesinorder(pnode.left);
 }
 
 void printinorder(binary_tree* bt){
