@@ -23,8 +23,8 @@ bool search(binary_tree* bt, int key) {
          //goes right if key is bigger than current nodes key
          else {
              current = current->nextNodeRight;
-         }
      }
+   }
 
      //returns false if key is not found
      return false;
@@ -88,13 +88,13 @@ int btSize(binary_tree* bt) {
 
 void printpostorder(binarytree* bt) {
 
-  if(bt = NULL){
+  if(bt->root = NULL){
     return;
   }
 
-  printPostorder(bt->nextNodeLeft);
+  printPostorder((bt->root)->nextNodeLeft);
 
-  printPostorder(bt->nextNodeRight);
+  printPostorder((bt->root)->nextNodeRight);
 
   printf("%d ", bt->num);
 
