@@ -35,7 +35,6 @@ void insert(binary_tree* bt, int key) {
     new->key = key;
     new->nextNodeLeft = NULL;
     new->nextNodeRight = NULL;
-    int depth = 0;
 
     //if tree is empty
     if(bt->root == NULL) {
@@ -53,24 +52,20 @@ void insert(binary_tree* bt, int key) {
            if(key < current->key) {
                previous = current;
                current = current->nextNodeLeft;
-               depth++;
            }
            //checks if key goes right of current node
            else if(key > current->key) {
                previous = current;
                current = current->nextNodeRight;
-               depth++;
            }
        }
        //deals with the case of the root being the only node in the tree
        if (current = bt->root) {
            if(key < bt->root->key) {
                current = bt->root->nextNodeLeft; 
-               depth++; 
            }
            else if(key > bt->root->key) {
                current = bt->root->nextNodeRight;
-               depth++;
            }
        }
        
@@ -82,11 +77,6 @@ void insert(binary_tree* bt, int key) {
 		    previous->nextNodeRight = new;
         }
     }
-
-    //if inserted node increases depth of the tree assign bt the new depth
-        if(depth > bt->depth) {
-            bt->depth = depth;
-    }
     bt->size++;
 }
 
@@ -96,7 +86,4 @@ int btSize(binary_tree* bt) {
     return bt->size;
 }
 
-int treeheight(binary_tree* bt) {
-    return bt->depth;
-}
 
