@@ -5,6 +5,15 @@
 #ifndef BINARYTREE_BINARYTREE_H
 #define BINARYTREE_BINARYTREE_H
 
+
+typedef struct Tree_Node {
+	int key;
+	struct Tree_Node nextNodePtr;
+	struct Tree_Node nextNodeLeft;
+	struct Tree_Node nextNodeRight;
+
+}Node;
+
 typedef struct Binary_Tree{
 
     int size;
