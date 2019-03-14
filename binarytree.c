@@ -86,7 +86,6 @@ void insert(binary_tree* bt, int key) {
        if (key < previous->key) {
 		    previous->nextNodeLeft = new;
        }
-	    else{
        else{
 		    previous->nextNodeRight = new;
         }
