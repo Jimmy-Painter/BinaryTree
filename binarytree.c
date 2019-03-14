@@ -103,3 +103,21 @@ void printpreorder(binarytree* bt) {
   printpreorder((bt->root)->nextNodeLeft);
   printpreorder((bt->root)->nextNodeRight);
 }
+
+int treeheight(binarytree* bt){
+  if(bt->root = NULL) {
+    return;
+  }
+
+    int leftDepth = treeheight((bt->root)->nextNodeLeft);
+    int rightDpeth = treeheight((bt->root)->nextNodeRight);
+
+    if(leftDepth > rightDepth) {
+      return leftDepth + 1;
+    }
+
+    else {
+      return rioghtDepth + 1;
+    }
+
+}
