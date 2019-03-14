@@ -87,15 +87,19 @@ int btSize(binary_tree* bt) {
 }
 
 void printpostorder(binarytree* bt) {
-
   if(bt->root = NULL){
     return;
   }
-
-  printPostorder((bt->root)->nextNodeLeft);
-
-  printPostorder((bt->root)->nextNodeRight);
-
+  printpostorder((bt->root)->nextNodeLeft);
+  printpostorder((bt->root)->nextNodeRight);
   printf("%d ", bt->num);
+}
 
+void printpreorder(binarytree* bt) {
+  if(bt->root = NULL){
+    return;
+  }
+  printf("%d ", bt->num);
+  printpreorder((bt->root)->nextNodeLeft);
+  printpreorder((bt->root)->nextNodeRight);
 }
