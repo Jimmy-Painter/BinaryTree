@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir
 /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/edit_cache.dir
+=======
+C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir
+C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2

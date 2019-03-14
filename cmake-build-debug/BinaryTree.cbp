@@ -4,10 +4,11 @@
 	<Project>
 		<Option title="BinaryTree"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -30,15 +31,34 @@
 			<Target title="BinaryTree">
 				<Option output="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+=======
+				<Option working_dir="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BinaryTree">
+				<Option output="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -48,15 +68,31 @@
 			<Target title="BinaryTree/fast">
 				<Option output="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+=======
+					<Build command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 BinaryTree"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BinaryTree/fast">
+				<Option output="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/BinaryTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -84,6 +120,45 @@
 			<Option target="BinaryTree"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/CMakeLists.txt">
+=======
+					<Build command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 BinaryTree/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.c">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/binarytree.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/main.c">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/CMakeLists.txt">
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
