@@ -8,6 +8,13 @@ int main() {
     int found;
     int const ARR_SIZE = 10;
     int nums[ARR_SIZE ];
+    int i;
+    int numRead;
+
+    while (!feof(numbers)){
+        fscanf(numbers, "%d", numRead);
+        insert(&bt, numRead); 
+    }
 
 
 
