@@ -2,6 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//recursively prints in order 
+void printInOrder(Node* node) {
+     if(node == NULL) {
+         return;
+     }
+
+     printInOrder(node->nextNodeLeft);
+
+     printInOrder(node->nextNodeRight);
+
+     
+}
+
 void initialize(binary_tree* bt) {
     bt->root = NULL;
     bt->size = 0;
@@ -62,7 +75,11 @@ void insert(binary_tree* bt, int key) {
        //deals with the case of the root being the only node in the tree
        if (current == bt->root) {
            if(key < bt->root->key) {
+<<<<<<< HEAD
                current = bt->root->nextNodeLeft;
+=======
+               current = bt->root->nextNodeLeft; 
+>>>>>>> e04ba4bcfe80d0f4b3c517f9d83e12c54ac3af05
            }
            else if(key > bt->root->key) {
                current = bt->root->nextNodeRight;
@@ -81,6 +98,7 @@ void insert(binary_tree* bt, int key) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void printpostorder(binarytree* bt) {
   if(bt->root = NULL){
     return;
@@ -89,6 +107,13 @@ void printpostorder(binarytree* bt) {
   printpostorder((bt->root)->nextNodeRight);
   printf("%d ", bt->num);
 }
+=======
+void printinorder(binary_tree* bt) {
+    printInOrder(bt->root);
+}
+
+
+>>>>>>> e04ba4bcfe80d0f4b3c517f9d83e12c54ac3af05
 
 void printpreorder(binarytree* bt) {
   if(bt->root = NULL){
@@ -117,6 +142,7 @@ int treeheight(binarytree* bt){
 
 }
 
+<<<<<<< HEAD
 int btsize(binarytree* bt){
     return bt->size;
   }
@@ -126,14 +152,26 @@ int btsize(binarytree* bt){
 
 }
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+>>>>>>> e04ba4bcfe80d0f4b3c517f9d83e12c54ac3af05
+=======
 void printnodesinorder(node* pnode){
+=======
+void printnodesinorder(Node* pnode){
+>>>>>>> 6c67e34e8de4fb46b9a10345cf6d410876c11dd8
     if(pnode ==NULL){
         return;
     }
-    printnodesinorder(pnode.left);
+    printnodesinorder(pnode->nextNodeLeft);
 }
 
 void printinorder(binary_tree* bt){
     printnodesinorder(bt->root);
 }
+<<<<<<< HEAD
 >>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
+=======
+>>>>>>> f3452c9c8258f9c7a4bf36da5eb1f275191f3747
+>>>>>>> e04ba4bcfe80d0f4b3c517f9d83e12c54ac3af05
