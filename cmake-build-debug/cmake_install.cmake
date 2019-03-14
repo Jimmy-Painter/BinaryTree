@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Install script for directory: /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree
+=======
+# Install script for directory: C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 # Install script for directory: /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +48,13 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
+<<<<<<< HEAD
+file(WRITE "/cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/parke/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 file(WRITE "/cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

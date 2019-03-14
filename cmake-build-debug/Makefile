@@ -39,23 +39,83 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMAKE_COMMAND = /cygdrive/c/Users/theni/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe
+
+# The command to remove a file.
+RM = /cygdrive/c/Users/theni/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+=======
+CMAKE_COMMAND = C:\Users\parke\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\cmake\win\bin\cmake.exe
+
+# The command to remove a file.
+RM = C:\Users\parke\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\cmake\win\bin\cmake.exe -E remove -f
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 CMAKE_COMMAND = /cygdrive/c/Users/Jimmy/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
 RM = /cygdrive/c/Users/Jimmy/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 CMAKE_SOURCE_DIR = /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/cygdrive/c/Users/theni/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/cygdrive/c/Users/theni/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	C:\Users\parke\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+
+.PHONY : edit_cache\fast
+
+=======
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -80,9 +140,21 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/theni/OneDrive/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\CMakeFiles C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\CMakeFiles\progress.marks
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parke\OneDrive\Documents\GitHub\BinaryTree\cmake-build-debug\CMakeFiles 0
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Jimmy/Documents/GitHub/BinaryTree/cmake-build-debug/CMakeFiles 0
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 .PHONY : all
 
 # The main clean target

@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+ToolSet: 3.0.3 (local)@C:\cygwin64
+=======
+ToolSet: 15.0 (local)@C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
+>>>>>>> 2b95ac6671d054cbf1fc9f142d2e3e3396e46be2
+=======
 ToolSet: 2.11.2 (local)@C:\cygwin64
+>>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
 Options: 
 
 Options:
