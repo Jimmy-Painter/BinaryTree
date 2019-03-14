@@ -5,19 +5,19 @@
 #ifndef BINARYTREE_BINARYTREE_H
 #define BINARYTREE_BINARYTREE_H
 
-typedef struct Binary_Tree{
+typedef struct Tree_Node {
+    int key;
+    struct Tree_Node* nextNodeRight;
+    struct Tree_Node* nextNodeLeft;
+}Node;
 
+
+typedef struct Binary_Tree{
+    int depth;
     int size;
 	Node* root;
 
 }binary_tree;
-
-typedef struct Tree_Node {
-    int key;
-    Node* nextNodeRight;
-    Node* nextNodeLeft;
-}Node;
-
 
 
 void initialize(binary_tree* bt);

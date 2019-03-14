@@ -2,6 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//recursively prints in order 
+void printInOrder(Node* node) {
+     if(node == NULL) {
+         return;
+     }
+
+     printInOrder(node->nextNodeLeft);
+
+     printInOrder(node->nextNodeRight);
+
+     
+}
+
 void initialize(binary_tree* bt) {
     bt->root = NULL;
     bt->size = 0;
@@ -79,6 +92,11 @@ void insert(binary_tree* bt, int key) {
     }
     bt->size++;
 }
+
+void printinorder(binary_tree* bt) {
+    printInOrder(bt->root);
+}
+
 
 
 
