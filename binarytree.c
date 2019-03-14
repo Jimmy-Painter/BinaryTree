@@ -105,12 +105,17 @@ int btSize(binary_tree* bt) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 void printnodesinorder(node* pnode){
+=======
+void printnodesinorder(Node* pnode){
+>>>>>>> 6c67e34e8de4fb46b9a10345cf6d410876c11dd8
     if(pnode ==NULL){
         return;
     }
+    printnodesinorder(pnode->nextNodeLeft);
 }
 
 void printinorder(binary_tree* bt){
