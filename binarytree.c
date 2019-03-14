@@ -73,7 +73,7 @@ void insert(binary_tree* bt, int key) {
            }
        }
        //deals with the case of the root being the only node in the tree
-       if (current = bt->root) {
+       if (current == bt->root) {
            if(key < bt->root->key) {
                current = bt->root->nextNodeLeft; 
            }

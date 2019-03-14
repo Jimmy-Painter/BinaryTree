@@ -15,7 +15,6 @@ typedef struct Tree_Node {
 typedef struct Binary_Tree{
     int depth;
     int size;
-	Node* root;
 
 }binary_tree;
 
