@@ -86,7 +86,6 @@ int btSize(binary_tree* bt) {
     return bt->size;
 }
 
-<<<<<<< HEAD
 void printpostorder(binarytree* bt) {
   if(bt->root = NULL){
     return;
@@ -105,38 +104,33 @@ void printpreorder(binarytree* bt) {
   printpreorder((bt->root)->nextNodeRight);
 }
 
-int treeheight(binarytree* bt){
-  if(bt->root = NULL) {
-    return;
-  }
+//recursive function that takes a node as input
+int heightRecursion(Node* node) {
+    int right;
+    int left;
 
-    int leftDepth = treeheight((bt->root)->nextNodeLeft);
-    int rightDepth = treeheight((bt->root)->nextNodeRight);
-
-    if(leftDepth > rightDepth) {
-      return leftDepth + 1;
+    //basecase
+    if(node == NULL) {
+        return 0;
     }
-
     else {
-      return rightDepth + 1;
-    }
+        //keeps track of how deep down the tree you go
+        right = heightRecursion(node->nextNodeRight);
+        left = heightRecursion(node->nextNodeLeft);
 
+        //sees if left or right is deeper
+        if(left > right) {
+            return(left + 1);
+        }
+        else {
+            return(right + 1);
+        }
+   }
+} 
+
+//passes the root to the recursive function
+int treeheight(binary_tree* bt) {
+    //subtracts one because heightRecursion function counts the root as layer of depth
+     return heightRecursion(bt->root) - 1;
 }
 
-
-
-
-
-}
-=======
-void printnodesinorder(node* pnode){
-    if(pnode ==NULL){
-        return;
-    }
-    printnodesinorder(pnode.left);
-}
-
-void printinorder(binary_tree* bt){
-    printnodesinorder(bt->root);
-}
->>>>>>> 02dbf396c070e0d35e247fb0cf3af5b156d10aae
