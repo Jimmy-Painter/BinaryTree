@@ -8,25 +8,20 @@
 
 typedef struct Tree_Node {
 	int key;
-	Node* nextNodeRight;
-	Node* nextNodeLeft;
+	struct Tree_Node* nextNodeLeft;
+	struct Tree_Node* nextNodeRight;
 
 }Node;
 
 typedef struct Binary_Tree{
 
-    int size;
-	struct Node* root;
-
-}binary_tree;
-
-
-
-
-typedef struct Binary_Tree{
-    int size;
+	int size;
 	Node* root;
+
 }binary_tree;
+
+
+
 
 
 void initialize(binary_tree* bt);

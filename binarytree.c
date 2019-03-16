@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 void initialize(binary_tree* bt) {
-    bt->root = NULL;
     bt->size = 0;
 }
 
@@ -35,7 +34,7 @@ void insert(binary_tree* bt, int key) {
     new->key = key;
     new->nextNodeLeft = NULL;
     new->nextNodeRight = NULL;
-
+    bt->size++;
     //if tree is empty
     if(bt->root == NULL) {
         bt->root = new;
@@ -44,7 +43,7 @@ void insert(binary_tree* bt, int key) {
     else {
        Node* current = bt->root;
        //previous will be the parent node after loop is completed
-       Node* previous;
+       Node* previous = NULL;
 
        //loops until it reaches place of insertion
        while(current != NULL) {
@@ -77,26 +76,27 @@ void insert(binary_tree* bt, int key) {
 		    previous->nextNodeRight = new;
         }
     }
-    bt->size++;
+
 }
 
 
 
-int btSize(binary_tree* bt) {
+int btsize(binary_tree* bt ) {
     return bt->size;
 }
 
-void printpostorder(binarytree* bt) {
-  if(bt->root = NULL){
+
+void printpostorder(binary_tree* bt) {
+  if(bt->root == NULL){
     return;
   }
   printpostorder((bt->root)->nextNodeLeft);
   printpostorder((bt->root)->nextNodeRight);
-  printf("%d ", bt->num);
+  printf("%d ", bt->root);
 }
 
-void printpreorder(binarytree* bt) {
-  if(bt->root = NULL){
+void printpreorder(binary_tree* bt) {
+  if(bt->root == NULL){
     return;
   }
   printf("%d ", bt->num);

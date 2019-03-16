@@ -3,7 +3,7 @@
 
 int main() {
 
-    FILE* numbers = fopen("myfile.txt", "r");
+    FILE* numbers = fopen("C:\\Users\\Jimmy\\Documents\\GitHub\\BinaryTree\\myfile.txt", "r");
     binary_tree bt;
     int found;
     int const ARR_SIZE = 10;
@@ -12,11 +12,12 @@ int main() {
     int numRead;
 
     while (!feof(numbers)){
-        fscanf(numbers, "%d", numRead);
+        fscanf(numbers, "%d", &numRead);
+        printf("%d\n", numRead);
         insert(&bt, numRead); 
     }
 
-
+    initialize(&bt);
 
 
     printf("Print in order\n");
