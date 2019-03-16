@@ -85,6 +85,7 @@ int btsize(binary_tree* bt ) {
     return bt->size;
 }
 
+<<<<<<< HEAD
 
 void printpostorder(binary_tree* bt) {
   if(bt->root == NULL){
@@ -93,13 +94,58 @@ void printpostorder(binary_tree* bt) {
   printpostorder((bt->root)->nextNodeLeft);
   printpostorder((bt->root)->nextNodeRight);
   printf("%d ", bt->root);
+=======
+void inorderRecursion(Node* node) {
+    //basecase returns when whole tree has been printed
+    if(node == NULL) {
+        return;
+    }
+    else {
+        //left
+        inorderRecursion(node->nextNodeLeft);
+        //root
+        printf("%d ", node->key);
+        //right
+        inorderRecursion(node->nextNodeRight);
+    }
+>>>>>>> b81ca1b9f40627ec3dc59ce4a887abf087ad6e70
+}
+void printinorder(binary_tree* bt) {
+    inorderRecursion(bt->root);
 }
 
+
+//recursive function for postorder
+void postorderRecursion(Node* node) {
+    //basecase exits recursion once whole tree has been printed
+    if(node == NULL){
+        return;
+    }
+    else {
+       //left
+       postorderRecursion(node->nextNodeLeft);
+       //right
+       postorderRecursion(node->nextNodeRight);
+       //root
+       printf("%d ", node->key);
+    }
+    
+}
+
+//passes the root of the tree to recursive function
+void printpostorder(binary_tree* bt) {
+    postorderRecursion(bt->root);
+}
+
+
 void printpreorder(binary_tree* bt) {
+<<<<<<< HEAD
   if(bt->root == NULL){
+=======
+  if(bt->root = NULL){
+>>>>>>> b81ca1b9f40627ec3dc59ce4a887abf087ad6e70
     return;
   }
-  printf("%d ", bt->num);
   printpreorder((bt->root)->nextNodeLeft);
   printpreorder((bt->root)->nextNodeRight);
 }
@@ -118,7 +164,6 @@ int heightRecursion(Node* node) {
         right = heightRecursion(node->nextNodeRight);
         left = heightRecursion(node->nextNodeLeft);
 
-        //sees if left or right is deeper
         if(left > right) {
             return(left + 1);
         }
