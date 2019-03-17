@@ -161,7 +161,6 @@ int heightRecursion(Node* node) {
         right = heightRecursion(node->nextNodeRight);
         left = heightRecursion(node->nextNodeLeft);
 
-        //sees if left or right is bigger 
         if(left > right) {
             return(left + 1);
         }
