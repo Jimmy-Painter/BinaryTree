@@ -12,9 +12,6 @@ int main(int argc, char* argv[]) {
     FILE* numbers = fopen(argv[1], "r");
     binary_tree bt;
     bool found;
-    int const ARR_SIZE = 10;
-    int nums[ARR_SIZE ];
-    int i;
     int numRead;
 
     //error if file can't be opened

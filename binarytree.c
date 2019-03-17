@@ -78,12 +78,15 @@ void insert(binary_tree* bt, int key) {
         }
     }
     bt->size = bt->size + 1;
+
 }
+
 
 
 int btsize(binary_tree* bt ) {
     return (bt->size);
 }
+
 
 void inorderRecursion(Node* node) {
     //basecase returns when whole tree has been printed
