@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 void initialize(binary_tree* bt) {
-    bt->size = 0;
+      bt->root = NULL;
+      bt->size = 0;
 }
 
 bool search(binary_tree* bt, int key) {
