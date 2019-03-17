@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 void initialize(binary_tree* bt) {
-    bt->size = 0;
       bt->root = NULL;
       bt->size = 0;
 }
@@ -82,9 +81,7 @@ void insert(binary_tree* bt, int key) {
 }
 
 
-
 int btsize(binary_tree* bt ) {
-    return bt->size;
     return (bt->size);
 }
 
@@ -129,7 +126,6 @@ void printpreorder(binary_tree* bt) {
   preorderRecursion(bt->root);
 }
 
-//recursive function for postorder
 void postorderRecursion(Node* node) {
     //basecase exits recursion once whole tree has been printed
     if(node == NULL){
@@ -149,10 +145,6 @@ void postorderRecursion(Node* node) {
 //passes the root of the tree to recursive function
 void printpostorder(binary_tree* bt) {
     postorderRecursion(bt->root);
-}
-
-int btsize(binary_tree* bt ) {
-    return (bt->size);
 }
 
 //recursive function that takes a node as input
