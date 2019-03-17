@@ -78,6 +78,7 @@ void insert(binary_tree* bt, int key) {
 		    previous->nextNodeRight = new;
         }
     }
+    bt->size = bt->size + 1;
 }
 
 
