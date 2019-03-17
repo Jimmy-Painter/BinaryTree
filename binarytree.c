@@ -80,9 +80,8 @@ void insert(binary_tree* bt, int key) {
 }
 
 
-
 int btsize(binary_tree* bt ) {
-    return bt->size;
+    return (bt->size);
 }
 
 void inorderRecursion(Node* node) {
@@ -103,6 +102,27 @@ void inorderRecursion(Node* node) {
 //passes the root to the recursive function
 void printinorder(binary_tree* bt) {
     inorderRecursion(bt->root);
+}
+
+//recursive function for preorder
+void preorderRecursion(Node* node) {
+    //basecase exits recursion once whole tree has been printed
+    if(node == NULL){
+       return;
+    }        
+    else {
+       //root
+       printf("%d ", node->key);
+       //left
+       preorderRecursion(node->nextNodeLeft);
+       //right
+       preorderRecursion(node->nextNodeRight);
+    }
+}
+
+//passes the root to the recursive function
+void printpreorder(binary_tree* bt) {
+  preorderRecursion(bt->root);
 }
 
 void postorderRecursion(Node* node) {
@@ -126,25 +146,8 @@ void printpostorder(binary_tree* bt) {
     postorderRecursion(bt->root);
 }
 
-//recursive function for postorder
-void preorderRecursion(Node* node) {
-    //basecase exits recursion once whole tree has been printed
-    if(node == NULL){
-       return;
-    }        
-    else {
-       //root
-       printf("%d ", node->key);
-       //left
-       preorderRecursion(node->nextNodeLeft);
-       //right
-       preorderRecursion(node->nextNodeRight);
-    }
-}
-
-//passes the root to the recursive function
-void printpreorder(binary_tree* bt) {
-  preorderRecursion(bt->root);
+int btsize(binary_tree* bt ) {
+    return (bt->size);
 }
 
 //recursive function that takes a node as input
